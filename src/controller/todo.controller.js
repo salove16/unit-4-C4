@@ -1,7 +1,7 @@
 const express=require("express")
 
 const router=express.Router
-const Todo=require("../models/todo.model")
+const Todo =require("../models/todo.model")
 const authenticate=require("../middleware/authenticate")
 
 router.post("",authenticate,async(req,res)=>{
